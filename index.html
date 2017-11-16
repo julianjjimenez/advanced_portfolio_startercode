@@ -26,7 +26,7 @@
 
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
@@ -39,29 +39,31 @@
                 <a class="navbar-brand" href="#">Julian Jimenez</a>
             </div>
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+                <li class="active"><a href="#section1">Home</a></li>
+                <li><a href="#section2">About</a></li>
+                <li><a href="#section3">Projects</a></li>
+                <li><a href="#section3">Contact</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Header -->
     <div class="header">
-        <div class="jumbotron">
-            <div class="row">
-                <div class="col-xs-4">
-                    <h1>Who am I?</h1>
-                    <p>Name: Julian Jimenez</p>
-                    <p>Age: 17</p>
-                    <p>High School: Uncommon Charter HS</p>
-                </div>
-                <div class="col-xs-4"></div>
-                <div class="col-xs-4">
-                    <a id="img1" href="#">
-                        <img src="#">
-                    </a>
+        <div id="section1">
+            <div class="jumbotron">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <h1>Who am I?</h1>
+                        <p>Name: Julian Jimenez</p>
+                        <p>Age: 17</p>
+                        <p>High School: Uncommon Charter HS</p>
+                    </div>
+                    <div class="col-xs-4"></div>
+                    <div class="col-xs-4">
+                        <a class="thumbnail" href="#">
+                    <img src="images/massimo2.jpg">
+                </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -70,62 +72,64 @@
     <div class="about">
         <div class="row">
             <div class="col-xs-6">
-
+                <h1 id="about1"></h1>
             </div>
             <div class="col-xs-6">
-
+                <h1 id="about2"></h1>
             </div>
         </div>
     </div>
 
     <!-- Portfolio Grid Section -->
     <div class="container">
-        <div class="row">
-            <div class="col-xs-1"></div>
-            <div class="col-xs-4">
-                <a class="thumbnail" href="#">
+        <div id="section3">
+            <div class="row">
+                <div class="col-xs-1"></div>
+                <div class="col-xs-4">
+                    <a class="thumbnail" href="#">
                     <img src="images/project1.png" >
                 </a>
-                <!-- add caption text below here  -->
-                <div class="caption">
-                    <h1>Comic</h1>
-                    <p>By: Artist</p>
+                    <!-- add caption text below here  -->
+                    <div class="caption">
+                        <h1>ScriptEd Redesign</h1>
+                        <p>This is the first website I created utilizing bootstrap I was taught through ScriptEd's Summer Academy.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-xs-2"></div>
-            <div class="col-xs-4">
-                <a class="thumbnail" href="#">
-                    <img src="https://ichef.bbci.co.uk/news/624/cpsprodpb/0E21/production/_92971630_tv009689256.jpg" >
+                <div class="col-xs-2"></div>
+                <div class="col-xs-4">
+                    <a class="thumbnail" href="#">
+                    <img src="images/project2.png" >
                 </a>
-                <div class="caption">
-                    <h1>Grafitti</h1>
-                    <p>By: Local Artist</p>
+                    <div class="caption">
+                        <h1>Outlet</h1>
+                        <p>This website was created during the winter hackathon during my foundations year in ScriptEd along with other members of my team.</p>
+                    </div>
                 </div>
+                <div class="col-xs-1"></div>
             </div>
-            <div class="col-xs-1"></div>
-        </div>
-        <div class="row">
-            <div class="col-xs-1"></div>
-            <div class="col-xs-4">
-                <a class="thumbnail" href="#">
-                    <img src="http://www.scalarchives.com/web/img/slideshow/02.jpg" >
+            <div class="row">
+                <div class="col-xs-1"></div>
+                <div class="col-xs-4">
+                    <a class="thumbnail" href="#">
+                    <img src="images/project3.png" >
                 </a>
-                <div class="caption">
-                    <h1>Classic</h1>
-                    <p>By: Old Artist</p>
+                    <div class="caption">
+                        <h1>Universal Travles</h1>
+                        <p>This website was created during the spring hackathon during my foundations year in ScriptEd along with other members of my team.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-xs-2"></div>
-            <div class="col-xs-4">
-                <a class="thumbnail" href="#">
-                    <img src="https://cdnph.upi.com/sv/ph/og/i/6821494711666/2017/1/14947120289862/v2.1/Prank-pineapple-left-at-Scottish-gallery-included-in-modern-art-show.jpg" >
+                <div class="col-xs-2"></div>
+                <div class="col-xs-4">
+                    <a class="thumbnail" href="#">
+                    <img src="images/project4.png" >
                 </a>
-                <div class="caption">
-                    <h1>Fruit</h1>
-                    <p>By: Nature</p>
+                    <div class="caption">
+                        <h1>Early Bootstrap website</h1>
+                        <p>I created this website about myself when I was first introduced to Bootstrap. It has a handful of facts about me and uses simple bootstrap elements. </p>
+                    </div>
                 </div>
+                <div class="col-xs-1"></div>
             </div>
-            <div class="col-xs-1"></div>
         </div>
     </div>
     <!-- About Section -->
